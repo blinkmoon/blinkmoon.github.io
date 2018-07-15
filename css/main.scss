@@ -1,3 +1,7 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
 @charset "utf-8";
 
 // base part
@@ -6,12 +10,23 @@
 $base-background-color: '';
 
 // font
-$base-font-family: '';
+$base-font-family: 'Noto Sans', sans-serif;
 $base-font-size: 14pt;
 $base-line-height: 1.5;
+
+$text-color: black;
+$alt-color: black;
+
 
 // smaller part
 $small-font-size: $base-font-size * 0.875;
 
 // code part
 $mono-font-family: 'Source Code Pro';
+
+
+
+@import
+  "base",
+  "syntax-highlighting"
+;

@@ -6,3 +6,21 @@ biography: ""
 colophon: ""
 baseurl: ""
 url: ""
+
+# future available. publish a future date.
+future: false
+# limit posts. limit the number of posts to parse or publish.
+limit_posts: 10
+
+# jekyll environment
+JEKYLL_ENV: "development"
+
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"

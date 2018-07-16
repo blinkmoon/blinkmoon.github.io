@@ -68,12 +68,16 @@ body {
     pre {
         padding: 1em 1em;
         background-color: #1f1f1f;
+        &.highlight {
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
     }
     code {
         &.highlighter-rouge {
             background-color: burlywood;
+            padding: 0 0.25em;
         }
-        padding: 0 0.25em;
         font-weight: 700;
     }
 

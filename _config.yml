@@ -16,6 +16,8 @@ limit_posts: 10
 JEKYLL_ENV: "development"
 
 markdown: kramdown
+kramdown:
+  auto_id: true
 highlighter: rouge
 
 defaults:

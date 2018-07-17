@@ -1,0 +1,16 @@
+<div class="container" style="">
+    <div class="header" style="flex-direction: column-reverse;background-color: #feca38">
+        <div style="height: 3em;"></div>
+        {% if page.description %}
+        <div style="align-items: center;font-family: 'Chewy', cursive;">
+            <div style="width: 40em; height: 4em;flex-direction: row;justify-content: center;align-items: center;color: gray;">{{page.description}}</div>
+        </div>
+        {% endif %}
+        <div style="display: flex;flex-direction: row;justify-content: center;font-size: 6em;padding: 0.25em;font-family: 'Fredericka the Great', cursive;">
+            <strong>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</strong>
+        </div>
+        <div style="height: 4em">
+            <!-- gradien -->
+        </div>
+    </div>
+</div>

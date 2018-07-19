@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+    <div style="width: 100%;min-height: 17em;padding-bottom: 2em; background-color: gray;flex-direction: column;align-items: center;">
+        {% for my_page in site.pages %}
+        <!-- not contain the css page -->
+        {% unless my_page.url contains '.css' %}
+        <div style="padding: 0.5em 3em; border-bottom: 0.25em solid black">
+            <a style="font-size: 6em;color:#575500;" class="page-link" href="{{ my_page.url }}"><span style="color:#adab00;">{{ my_page.navtitle | default: my_page.title | default: my_page.path | escape }}</span></a>
+        </div>
+        {% endunless %} {% endfor %}
+    </div>
+</body>
+
+</html>
